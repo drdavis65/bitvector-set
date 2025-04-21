@@ -7,7 +7,8 @@ A lightweight and efficient Bit Vector data structure for set operations, design
 - List of item names in set as vector of strings
 - each item in set is assigned a bit in the order entered in set
 - set itself is an array of 32-bit values
-- array bit can be indexed by `bitvector[ floor( (item_num - 1) / 32 ) ] << ( (item_num - 1) % 32);`
+- array bit can be indexed by \
+  `bitvector[ floor( (item_num - 1) / 32 ) ] << ( (item_num - 1) % 32);`\
 -->`bitvector[ floor( (item_num - 1) >> 5 ) ] << ( (item_num - 1) & 0x1F);`
 - implement union and intersection between two bitvector sets
 
